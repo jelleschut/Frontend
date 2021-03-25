@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  updated: boolean = false;
   title = 'frontend';
+
+  onListUpdated(isUpdated: boolean) {
+    this.updated = isUpdated;
+  }
 }
